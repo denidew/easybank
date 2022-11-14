@@ -68,13 +68,19 @@ body {
 
 /* resfonsive */
 
+
+/* // Small devices (landscape phones, 576px and up) */
+
 @media(min-width:576px) {
     .navbar .menu ul {
         display: none;
     }
 }
 
-@media(min-width:806px) {
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media(min-width:768px) {
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -89,6 +95,27 @@ body {
         font-size: 15px;
         font-weight: 400;
     }
+    .navbar .button1 {
+        display: inline-block;
+        background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+        padding: 7px 10px;
+        border-radius: 25px;
+        margin-top: -7px;
+    }
+    .navbar .button1 a {
+        display: inline-block;
+        color: var(--White);
+        font-size: 14px;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media(min-width:992px) {
     .navbar .button1 {
         display: inline-block;
         background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
