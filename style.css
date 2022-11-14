@@ -60,9 +60,22 @@ body {
 
 .hamburger-menu .ham {
     background-color: var(--Grayish_Blue);
-    width: 100%;
+    width: 80%;
     height: 2px;
     border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.tog.ham1 {
+    transform: rotateZ(-45deg) translate(-2px, 4px);
+}
+
+.tog.ham2 {
+    display: none;
+}
+
+.tog.ham3 {
+    transform: rotateZ(45deg) translate(-5px, -7px);
 }
 
 
@@ -74,6 +87,11 @@ body {
 @media(min-width:576px) {
     .navbar .menu ul {
         display: none;
+    }
+    .navbar .menu ul li a {
+        color: var(--Grayish_Blue);
+        margin-left: 25px;
+        font-size: 14px;
     }
 }
 
