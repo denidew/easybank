@@ -80,7 +80,7 @@ body {
 
 /* // Medium devices (tablets, 768px and up) */
 
-@media(min-width:768px) {
+@media(min-width:700px) {
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -92,20 +92,21 @@ body {
         display: flex;
     }
     .navbar .menu ul li a {
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 400;
     }
     .navbar .button1 {
         display: inline-block;
         background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-        padding: 7px 10px;
+        padding: 0px 12px;
         border-radius: 25px;
-        margin-top: -7px;
+        margin-top: -5px;
     }
     .navbar .button1 a {
         display: inline-block;
         color: var(--White);
-        font-size: 14px;
+        font-size: 9px;
+        margin-top: 9px;
     }
     .hamburger-menu {
         display: none;
@@ -123,10 +124,15 @@ body {
         border-radius: 25px;
         margin-top: -10px;
     }
+    .navbar .menu ul li a {
+        font-size: 15px;
+        font-weight: 400;
+    }
     .navbar .button1 a {
         display: inline-block;
         color: var(--White);
         font-size: 14px;
+        margin-top: -5px;
     }
     .hamburger-menu {
         display: none;
